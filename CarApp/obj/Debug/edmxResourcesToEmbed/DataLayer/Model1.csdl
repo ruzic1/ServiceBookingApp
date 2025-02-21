@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CsLabModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Models" Relationship="Self.FK_Models_Manufacturers" FromRole="Manufacturers" ToRole="Models" />
+    <NavigationProperty Name="VehicleTypes" Relationship="Self.ManufacturersVehicleTypes" FromRole="Manufacturers" ToRole="VehicleTypes" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ManufacturerId" Type="Int32" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Manufacturer" Relationship="Self.FK_Models_Manufacturers" FromRole="Models" ToRole="Manufacturers" />
+    <NavigationProperty Name="VehicleType" Relationship="Self.FK_Models_VehicleTypes" FromRole="Models" ToRole="VehicleTypes" />
+    <NavigationProperty Name="Vehicles" Relationship="Self.FK_Vehicles_Models" FromRole="Models" ToRole="Vehicles" />
+  </EntityType>
+  <EntityType Name="RegistrationPlate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegistrationPlate1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Registrations" Relationship="Self.FK_Registrations_RegistrationPlates" FromRole="RegistrationPlates" ToRole="Registrations" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ValidUntil" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IssuedAt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RegistrationPlateId" Type="Int32" Nullable="false" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RegistrationPlate" Relationship="Self.FK_Registrations_RegistrationPlates" FromRole="Registrations" ToRole="RegistrationPlates" />
+    <NavigationProperty Name="Vehicle" Relationship="Self.FK_Registrations_Vehicles" FromRole="Registrations" ToRole="Vehicles" />
+  </EntityType>
+  <EntityType Name="ServiceSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="ScheduledFor" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ServiceTypeId" Type="Int32" Nullable="false" />
+    <Property Name="AdditionalInfo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="FinishedAt" Type="DateTime" Precision="3" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="ServiceType" Relationship="Self.FK_ServiceSchedules_ServiceTypes" FromRole="ServiceSchedules" ToRole="ServiceTypes" />
+    <NavigationProperty Name="Vehicle" Relationship="Self.FK_ServiceSchedules_Vehicles" FromRole="ServiceSchedules" ToRole="Vehicles" />
+  </EntityType>
+  <EntityType Name="ServiceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ServiceSchedules" Relationship="Self.FK_ServiceSchedules_ServiceTypes" FromRole="ServiceTypes" ToRole="ServiceSchedules" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UserUseCases" Relationship="Self.FK_UserUseCase_Users" FromRole="Users" ToRole="UserUseCase" />
+  </EntityType>
+  <EntityType Name="UserUseCase">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UseCaseId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UseCaseId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserUseCase_Users" FromRole="UserUseCase" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="Label" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Model" Relationship="Self.FK_Vehicles_Models" FromRole="Vehicles" ToRole="Models" />
+    <NavigationProperty Name="Registrations" Relationship="Self.FK_Registrations_Vehicles" FromRole="Vehicles" ToRole="Registrations" />
+    <NavigationProperty Name="ServiceSchedules" Relationship="Self.FK_ServiceSchedules_Vehicles" FromRole="Vehicles" ToRole="ServiceSchedules" />
+  </EntityType>
+  <EntityType Name="VehicleType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Models" Relationship="Self.FK_Models_VehicleTypes" FromRole="VehicleTypes" ToRole="Models" />
+    <NavigationProperty Name="Manufacturers" Relationship="Self.ManufacturersVehicleTypes" FromRole="VehicleTypes" ToRole="Manufacturers" />
+  </EntityType>
+  <Association Name="FK_Models_Manufacturers">
+    <End Role="Manufacturers" Type="Self.Manufacturer" Multiplicity="1" />
+    <End Role="Models" Type="Self.Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Models">
+        <PropertyRef Name="ManufacturerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Models_VehicleTypes">
+    <End Role="VehicleTypes" Type="Self.VehicleType" Multiplicity="1" />
+    <End Role="Models" Type="Self.Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Models">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicles_Models">
+    <End Role="Models" Type="Self.Model" Multiplicity="1" />
+    <End Role="Vehicles" Type="Self.Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Models">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Registrations_RegistrationPlates">
+    <End Role="RegistrationPlates" Type="Self.RegistrationPlate" Multiplicity="1" />
+    <End Role="Registrations" Type="Self.Registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegistrationPlates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Registrations">
+        <PropertyRef Name="RegistrationPlateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Registrations_Vehicles">
+    <End Role="Vehicles" Type="Self.Vehicle" Multiplicity="1" />
+    <End Role="Registrations" Type="Self.Registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Registrations">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceSchedules_ServiceTypes">
+    <End Role="ServiceTypes" Type="Self.ServiceType" Multiplicity="1" />
+    <End Role="ServiceSchedules" Type="Self.ServiceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceSchedules">
+        <PropertyRef Name="ServiceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceSchedules_Vehicles">
+    <End Role="Vehicles" Type="Self.Vehicle" Multiplicity="1" />
+    <End Role="ServiceSchedules" Type="Self.ServiceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceSchedules">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserUseCase_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="UserUseCase" Type="Self.UserUseCase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserUseCase">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ManufacturersVehicleTypes">
+    <End Role="Manufacturers" Type="Self.Manufacturer" Multiplicity="*" />
+    <End Role="VehicleTypes" Type="Self.VehicleType" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="CsLabEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Manufacturers" EntityType="Self.Manufacturer" />
+    <EntitySet Name="Models" EntityType="Self.Model" />
+    <EntitySet Name="RegistrationPlates" EntityType="Self.RegistrationPlate" />
+    <EntitySet Name="Registrations" EntityType="Self.Registration" />
+    <EntitySet Name="ServiceSchedules" EntityType="Self.ServiceSchedule" />
+    <EntitySet Name="ServiceTypes" EntityType="Self.ServiceType" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserUseCases" EntityType="Self.UserUseCase" />
+    <EntitySet Name="Vehicles" EntityType="Self.Vehicle" />
+    <EntitySet Name="VehicleTypes" EntityType="Self.VehicleType" />
+    <AssociationSet Name="FK_Models_Manufacturers" Association="Self.FK_Models_Manufacturers">
+      <End Role="Manufacturers" EntitySet="Manufacturers" />
+      <End Role="Models" EntitySet="Models" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Models_VehicleTypes" Association="Self.FK_Models_VehicleTypes">
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+      <End Role="Models" EntitySet="Models" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicles_Models" Association="Self.FK_Vehicles_Models">
+      <End Role="Models" EntitySet="Models" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Registrations_RegistrationPlates" Association="Self.FK_Registrations_RegistrationPlates">
+      <End Role="RegistrationPlates" EntitySet="RegistrationPlates" />
+      <End Role="Registrations" EntitySet="Registrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Registrations_Vehicles" Association="Self.FK_Registrations_Vehicles">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="Registrations" EntitySet="Registrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceSchedules_ServiceTypes" Association="Self.FK_ServiceSchedules_ServiceTypes">
+      <End Role="ServiceTypes" EntitySet="ServiceTypes" />
+      <End Role="ServiceSchedules" EntitySet="ServiceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceSchedules_Vehicles" Association="Self.FK_ServiceSchedules_Vehicles">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="ServiceSchedules" EntitySet="ServiceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserUseCase_Users" Association="Self.FK_UserUseCase_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserUseCase" EntitySet="UserUseCases" />
+    </AssociationSet>
+    <AssociationSet Name="ManufacturersVehicleTypes" Association="Self.ManufacturersVehicleTypes">
+      <End Role="Manufacturers" EntitySet="Manufacturers" />
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

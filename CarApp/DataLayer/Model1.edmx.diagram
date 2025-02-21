@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="304b7536e8c14c7d86c6d03882411879" Name="Diagram1">
+        <EntityTypeShape EntityType="CsLabModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.Model" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.RegistrationPlate" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.Registration" Width="1.5" PointX="9.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.ServiceSchedule" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.ServiceType" Width="1.5" PointX="10.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.User" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.UserUseCase" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.Vehicle" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsLabModel.VehicleType" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="CsLabModel.FK_Models_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_Models_VehicleTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_Vehicles_Models" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_Registrations_RegistrationPlates" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_Registrations_Vehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_ServiceSchedules_ServiceTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_ServiceSchedules_Vehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.FK_UserUseCase_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="CsLabModel.ManufacturersVehicleTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
