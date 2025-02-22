@@ -9,7 +9,7 @@ namespace CarApp.BusinessLayer
 {
     public class OperationResult
     {
-        public bool IsSuccessfull => Errors.Count == 0;
+        public bool IsSuccessful => Errors.Count == 0;
         public List<string> Errors = new List<string>() { };
         public IEnumerable<BaseDTO> Data = new List<BaseDTO>() { };
     }

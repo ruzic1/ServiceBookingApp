@@ -9,22 +9,26 @@ namespace CarApp.BusinessLayer
 {
     public class OperationManager
     {
-        public string Exec(Operation o)
+        public OperationResult Exec(Operation o)
         {
             try
             {
                 var rezultat = o.Execute();
-                if (rezultat != null) {
-                    return "Uspesno izvrsavanje!!!";
-                }
-                else
-                {
-                    return "rezultat je null";
-                }
+                return rezultat;
+                //if (rezultat != null) {
+                //    return rezultat;
+                //}
+                //else
+                //{
+                //    return "rezultat je null";
+                //}
             }
             catch (Exception ex)
             {
-                return "pojavila se neka greska";
+                return new OperationResult
+                {
+                    Errors = new List<string> { ex.Message }
+                };
             }
         }
     }

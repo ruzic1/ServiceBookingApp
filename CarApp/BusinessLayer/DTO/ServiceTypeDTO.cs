@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace CarApp.BusinessLayer.DTO
 {
-    public class ServiceType:BaseDTO
+    public class ServiceTypeDTO:BaseDTO
     {
-
+        public string Name { get; set; }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

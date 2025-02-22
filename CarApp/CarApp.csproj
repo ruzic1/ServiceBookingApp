@@ -56,10 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\DTO\BaseDTO.cs" />
-    <Compile Include="BusinessLayer\DTO\ServiceType.cs" />
+    <Compile Include="BusinessLayer\DTO\ServiceDTO.cs" />
+    <Compile Include="BusinessLayer\DTO\ServiceTypeDTO.cs" />
     <Compile Include="BusinessLayer\Operation.cs" />
     <Compile Include="BusinessLayer\OperationManager.cs" />
     <Compile Include="BusinessLayer\OperationResult.cs" />
+    <Compile Include="BusinessLayer\Operations\GetServices.cs" />
     <Compile Include="BusinessLayer\Operations\GetServiceTypes.cs" />
     <Compile Include="DataLayer\Manufacturer.cs">
       <DependentUpon>Model1.tt</DependentUpon>

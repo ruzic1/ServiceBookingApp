@@ -3,48 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Computer\\source\\repos\\CarApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\businesslayer\\operationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\businesslayer\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\dto\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\dto\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\dto\\servicetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\dto\\servicetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\operations\\getservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operations\\getservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\businesslayer\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\businesslayer\\operations\\getservicetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operations\\getservicetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\operationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\operations\\getservicetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operations\\getservicetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\datalayer\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\datalayer\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\datalayer\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\businesslayer\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\dto\\servicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\dto\\servicetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\dto\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|C:\\Users\\Computer\\source\\repos\\CarApp\\carapp\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\businesslayer\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\businesslayer\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|c:\\users\\computer\\source\\repos\\carapp\\carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B88E5B7C-AD04-43AB-BCFE-BDC67CADF4AD}|CarApp\\CarApp.csproj|solutionrelative:carapp\\gui\\showservicebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +70,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "GetServices.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operations\\GetServices.cs",
+              "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\Operations\\GetServices.cs",
+              "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operations\\GetServices.cs",
+              "RelativeToolTip": "CarApp\\BusinessLayer\\Operations\\GetServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T15:22:08.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceDTO.cs",
+              "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\DTO\\ServiceDTO.cs",
+              "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceDTO.cs",
+              "RelativeToolTip": "CarApp\\BusinessLayer\\DTO\\ServiceDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T14:59:47.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OperationResult.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\OperationResult.cs",
               "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\OperationResult.cs",
@@ -75,20 +109,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OperationManager.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\OperationManager.cs",
               "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\OperationManager.cs",
               "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\OperationManager.cs",
               "RelativeToolTip": "CarApp\\BusinessLayer\\OperationManager.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T21:02:34.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "BaseDTO.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\BaseDTO.cs",
               "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\DTO\\BaseDTO.cs",
@@ -101,59 +135,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceType.cs",
-              "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceType.cs",
-              "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\DTO\\ServiceType.cs",
-              "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceType.cs",
-              "RelativeToolTip": "CarApp\\BusinessLayer\\DTO\\ServiceType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ServiceTypeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceTypeDTO.cs",
+              "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\DTO\\ServiceTypeDTO.cs",
+              "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\DTO\\ServiceTypeDTO.cs",
+              "RelativeToolTip": "CarApp\\BusinessLayer\\DTO\\ServiceTypeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T21:00:02.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "GetServiceTypes.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operations\\GetServiceTypes.cs",
               "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\Operations\\GetServiceTypes.cs",
               "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operations\\GetServiceTypes.cs",
               "RelativeToolTip": "CarApp\\BusinessLayer\\Operations\\GetServiceTypes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T20:59:26.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Operation.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operation.cs",
               "RelativeDocumentMoniker": "CarApp\\BusinessLayer\\Operation.cs",
               "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\BusinessLayer\\Operation.cs",
               "RelativeToolTip": "CarApp\\BusinessLayer\\Operation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T20:53:57.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ShowServiceBook.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\ShowServiceBook.cs",
               "RelativeDocumentMoniker": "CarApp\\GUI\\ShowServiceBook.cs",
               "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\ShowServiceBook.cs",
               "RelativeToolTip": "CarApp\\GUI\\ShowServiceBook.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAD4vyQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T20:45:43.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ShowServiceBook.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\ShowServiceBook.cs",
               "RelativeDocumentMoniker": "CarApp\\GUI\\ShowServiceBook.cs",
@@ -165,20 +199,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\Form1.cs",
               "RelativeDocumentMoniker": "CarApp\\GUI\\Form1.cs",
               "ToolTip": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\Form1.cs",
               "RelativeToolTip": "CarApp\\GUI\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T20:35:31.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\DataLayer\\Model1.edmx",
               "RelativeDocumentMoniker": "CarApp\\DataLayer\\Model1.edmx",
@@ -190,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Computer\\source\\repos\\CarApp\\CarApp\\GUI\\Form1.cs",
               "RelativeDocumentMoniker": "CarApp\\GUI\\Form1.cs",
